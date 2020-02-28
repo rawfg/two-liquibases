@@ -1,0 +1,7 @@
+a:
+  datasource:
+    jdbcUrl: jdbc:h2:./target/h2/ab
+
+b:
+  datasource:
+    jdbcUrl: jdbc:h2:./target/h2/ab

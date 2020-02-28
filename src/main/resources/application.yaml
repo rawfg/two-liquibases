@@ -1,0 +1,21 @@
+a:
+  liquibase:
+    drop-first: true
+    change-log: db/changelog/db.changelog-A.yaml
+
+  datasource:
+    jdbcUrl: jdbc:h2:./target/h2/a
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+
+b:
+  liquibase:
+    change-log: db/changelog/db.changelog-B.yaml
+
+  datasource:
+    jdbcUrl: jdbc:h2:./target/h2/b
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+

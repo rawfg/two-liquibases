@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: B
+      author: problem
+      changes:
+        - createTable:
+            tableName: entityB
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: fieldB
+                  type: varchar(50)
+        - loadData:
+            file: db/changelog/entity-b.csv
+            tableName: entityB

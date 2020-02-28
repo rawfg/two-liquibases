@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: A
+      author: problem
+      changes:
+        - createTable:
+            tableName: entityA
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: fieldA
+                  type: varchar(50)
